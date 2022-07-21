@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - open-school-app
 on:
   push:
     branches:
-      - Develop
+      - Production
   workflow_dispatch:
 
 jobs:
