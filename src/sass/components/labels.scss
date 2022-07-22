@@ -17,3 +17,11 @@
   font-size: 36px;
   font-weight: bold;
 }
+
+.gradient-label{
+  $first-color: var(--color-1);
+  $second-color: var(--color-2);
+  background: linear-gradient(to right, $first-color, $second-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
