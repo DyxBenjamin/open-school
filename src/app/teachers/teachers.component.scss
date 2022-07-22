@@ -1,1 +1,16 @@
 @import '../../sass/components/labels.scss';
+@import '../../sass/components/cards.scss';
+@import '../../sass/components/buttons';
+
+.teachers{
+  height: 100vh;
+  width: 100vw;
+  }
+
+.quick-stats-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 5%;
+}
