@@ -1,0 +1,86 @@
+<section class='teachers' >
+  <p class='big-label' >Acceso rapido</p>
+  <div class='quick-stats-container'>
+    <div class = 'dynamic-wide-button-small' routerLink="/teachers/groups"  >
+      <p class='medium-label-light' style='color: white'>Grupos</p>
+    </div >
+    <div class = 'dynamic-wide-button-small' routerLink="/teachers/tutorials"   >
+      <p class='medium-label-light' style='color: white'>Tutorias</p>
+    </div >
+    <div class = 'dynamic-wide-button-small' routerLink="/teachers/courses"  >
+      <p class='medium-label-light' style='color: white'>Cursos</p>
+    </div >
+    <div class = 'dynamic-wide-button-small' routerLink="/teachers/students"   >
+      <p class='medium-label-light' style='color: white'>Estudiantes</p>
+    </div >
+    <div class = 'dynamic-wide-button-small' routerLink="/teachers/parents"  >
+      <p class='medium-label-light' style='color: white'>Padres</p>
+    </div >
+  </div>
+
+
+  <p class='big-label' >Estadisticas</p>
+  <div class='quick-stats-container'>
+    <div class = 'small-card' >
+      <p class='medium-label gradient-label' style='--color-1:#468aed; --color-2:#00bcd4' >Hola mundo</p>
+      <p class='big-label-light' style='font-weight: bold'>100</p>
+    </div >
+    <div class = 'small-card' >
+      <p class='medium-label gradient-label' style='--color-1:#468aed; --color-2:#00bcd4' >Hola mundo</p>
+      <p class='big-label-light' style='font-weight: bold'>100</p>
+    </div >
+    <div class = 'small-card' >
+      <p class='medium-label gradient-label' style='--color-1:#468aed; --color-2:#00bcd4' >Hola mundo</p>
+      <p class='big-label-light' style='font-weight: bold'>100</p>
+    </div >
+    <div class = 'small-card' >
+      <p class='medium-label gradient-label' style='--color-1:#468aed; --color-2:#00bcd4' >Hola mundo</p>
+      <p class='big-label-light' style='font-weight: bold'>100</p>
+    </div >
+  </div>
+
+  <div class='courses-header' >
+    <div>
+      <p class='big-label' >Mis cursos</p>
+      <a class='small-label-light anchor' routerLink="/teachers/courses"  >Ver todos</a>
+    </div>
+    <button class='dynamic-wide-button'  routerLink="/teachers/courses/create"  >
+      Crear un curso nuevo
+    </button>
+  </div>
+
+  <div class='courses-body'>
+
+    <div class='medium-card' *ngFor='let course of courses' >
+      <div class='course-card-header' [ngStyle]="{'--color-1':getRandomColor(), '--color-2':getRandomColor()}" >
+        <p class='big-label' style='color: white' >{{course.name}}</p>
+        <p class='medium-label-light' style='color: white' >{{course.level}}</p>
+      </div>
+      <div class='course-card-body'>
+        <p class='medium-label-light' >Alumnos inscritos</p>
+        <div class='user-avatar-group' >
+          <div class='user-avatar-rounded-small'>
+            <img src='https://i.pravatar.cc/300' alt='user-avatar'>
+          </div>
+          <div class='user-avatar-rounded-small'>
+            <img src='https://i.pravatar.cc/301' alt='user-avatar'>
+          </div>
+          <div class='user-avatar-rounded-small'>
+            <img src='https://i.pravatar.cc/302' alt='user-avatar'>
+          </div>
+          <div class='user-avatar-rounded-small'>
+            <img src='https://i.pravatar.cc/303' alt='user-avatar'>
+          </div>
+          <div class='user-avatar-rounded-small'>
+            <img src='https://i.pravatar.cc/304' alt='user-avatar'>
+          </div>
+          <div class='user-avatar-rounded-small'>
+            <p class='medium-label' style='background: #6499E5; color: white; height: 100%; width: 100%; display: grid; place-content: center' >+20</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
