@@ -38,7 +38,7 @@
 
   <div class='courses-body'>
 
-    <div class='medium-card' *ngFor='let course of courses' >
+    <div class='medium-card' routerLink="/students/course/matematicas" *ngFor='let course of courses' >
       <div class='course-card-header' [ngStyle]="{'--color-1':getRandomColor(), '--color-2':getRandomColor()}" >
         <p class='big-label' style='color: white' >{{course.name}}</p>
         <p class='medium-label-light' style='color: white' >{{course.level}}</p>

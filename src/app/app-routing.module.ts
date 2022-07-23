@@ -32,7 +32,7 @@ const routes: Routes = [
   {path: 'teachers/courses/create', component: CourseCreateComponent },
   {path: 'students', component: StudentsComponent},
   {path: 'students/courses', component: StudentsCoursesComponent},
-  {path: 'students/course/:course', component: StudentsCoursesCourseComponent},
+  {path: 'students/course/matematicas', component: StudentsCoursesCourseComponent},
   {path: 'home', component: HomeComponent},
   {path: 'registered-user', component: RegisteredUserComponent},
   {path: 'login', component: LoginComponent },
