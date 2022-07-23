@@ -2,6 +2,7 @@
 @import '../../sass/components/cards.scss';
 @import '../../sass/components/buttons.scss';
 @import '../../sass/components/links.scss';
+@import '../../sass/components/images.scss';
 
 
 .teachers{
@@ -38,9 +39,11 @@
 
 .courses-body{
   box-sizing: border-box;
+  width: 100%;
   padding: 30px 0 ;
   display: grid;
-  place-content: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 50px;
   }

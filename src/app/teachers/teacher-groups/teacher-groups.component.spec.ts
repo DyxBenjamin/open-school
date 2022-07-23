@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GroupsComponent } from './groups.component';
+import { TeacherGroupsComponent } from './teacher-groups.component';
 
 describe('GroupsComponent', () => {
-  let component: GroupsComponent;
-  let fixture: ComponentFixture<GroupsComponent>;
+  let component: TeacherGroupsComponent;
+  let fixture: ComponentFixture<TeacherGroupsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GroupsComponent ]
+      declarations: [ TeacherGroupsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GroupsComponent);
+    fixture = TestBed.createComponent(TeacherGroupsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
