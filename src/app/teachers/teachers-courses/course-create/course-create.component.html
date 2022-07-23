@@ -1,1 +1,31 @@
-<p>course-create works!</p>
+<section>
+  <div class='course-create-header' >
+    <p class='big-label'>Nuevo curso</p>
+    <button class='dynamic-wide-button' id='create-course-button'>Vista previa</button>
+  </div>
+
+  <form class='vertical-form' (submit)='onSubmit($event)' >
+    <label class='big-label-light' >Informacion general</label>
+    <input class='text-input' type = 'text' name = 'nombre' placeholder = 'Nombre del curso' required>
+    <input class='text-input' type = 'text' name = 'descripcion' placeholder = 'Descripción del curso' required>
+
+  <select class='text-input' >
+    <option disabled value=''>Seleccione un nivel academico</option>
+    <option value="Primaria 1er grado">Primaria 1er grado</option>
+    <option value="Primaria 2do grado">Primaria 2do grado</option>
+    <option value="Primaria 3er grado">Primaria 3er grado</option>
+    <option value="Primaria 4to grado">Primaria 4to grado</option>
+    <option value="Primaria 5to grado">Primaria 5to grado</option>
+    <option value="Primaria 6to grado">Primaria 6to grado</option>
+    <option value="Primaria 7mo grado">Secundaria 1er grado</option>
+    <option value="Primaria 8vo grado">Secundaria 2do grado</option>
+    <option value="Primaria 9no grado">Secundaria 3er grado</option>
+  </select>
+
+  <input class='dynamic-wide-button' value="Siguiente"  type = 'submit' required>
+
+
+  </form >
+
+
+</section>
