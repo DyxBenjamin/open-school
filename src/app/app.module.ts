@@ -4,14 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { TeachersComponent } from './teachers/teachers.component';
 import {RouterModule} from "@angular/router";
-import {AppRoutingModule} from "./app.routing.module";
+import {AppRoutingModule} from "./app-routing.module";
 import {MatIconModule} from "@angular/material/icon";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GroupsComponent } from './teachers/groups/groups.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TeachersComponent
+    TeachersComponent,
+    GroupsComponent
   ],
   imports: [
     BrowserModule,
