@@ -1,0 +1,28 @@
+<section>
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-12">
+        <form [formGroup]="loginForm" class="row" (ngSubmit)="onSubmit()" autocomplete="off">
+          <div class="card card-login align-items-center">
+            <div class="card-header">
+              <h1 class='big-label mt-3'>LOGIN</h1>
+            </div>
+            <div class="card-body">
+              <div class="input-group mb-2">
+                <input type="text" formControlName="email" id="email" class="input-text form-control" required
+                       placeholder="Correo electrónico*"/>
+              </div>
+              <div class="input-group mt-2">
+                <input type="password" formControlName="password" class="input-text form-control" required
+                       placeholder="Contraseña*"/>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="dynamic-wide-button mb-4">ACCEDER</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
