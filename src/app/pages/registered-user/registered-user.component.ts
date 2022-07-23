@@ -1,11 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit} from "@angular/core";
 
 @Component({
-  selector: 'app-newUser',
-  templateUrl: './new-user.component.html',
-  styleUrls: ['./new-user.component.scss']
+  selector: 'app-registeredUser',
+  templateUrl: './registered-user.component.html',
+  styleUrls: ['./registered-user.component.scss']
 })
-export class NewUserComponent implements OnInit{
+export class RegisteredUserComponent implements OnInit{
   courses = [
     {
       id: 13241,

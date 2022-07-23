@@ -8,9 +8,10 @@ import {TeacherTutorialsComponent} from "./teachers/teacher-tutorials/teacher-tu
 import {TeacherCoursesComponent} from "./teachers/teachers-courses/teacher-courses.component";
 import {CourseCreateComponent} from "./teachers/teachers-courses/course-create/course-create.component";
 import {HomeComponent} from "./pages/portal/home/home.component";
+import {RegisteredUserComponent} from "./pages/registered-user/registered-user.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: 'teachers', pathMatch: 'full'},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {path: 'teachers', component: TeachersComponent },
   {path: 'teachers/groups', component: TeacherGroupsComponent },
   {path: 'teachers/parents', component: TeacherParentsComponent },
@@ -18,9 +19,8 @@ const routes: Routes = [
   {path: 'teachers/tutorials', component: TeacherTutorialsComponent },
   {path: 'teachers/courses', component: TeacherCoursesComponent },
   {path: 'teachers/courses/create', component: CourseCreateComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {path: 'home', component: HomeComponent},
-  {path: 'teachers', component: TeachersComponent}
+  {path: 'registered-user', component: RegisteredUserComponent},
 ]
 
 @NgModule({
