@@ -7,6 +7,7 @@ import {TeacherStudentsComponent} from "./teachers/teacher-students/teacher-stud
 import {TeacherTutorialsComponent} from "./teachers/teacher-tutorials/teacher-tutorials.component";
 import {TeacherCoursesComponent} from "./teachers/teachers-courses/teacher-courses.component";
 import {CourseCreateComponent} from "./teachers/teachers-courses/course-create/course-create.component";
+import {GroupSessionComponent} from "./teachers/teacher-tutorials/group-session/group-session.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'teachers/parents', component: TeacherParentsComponent },
   {path: 'teachers/students', component: TeacherStudentsComponent },
   {path: 'teachers/tutorials', component: TeacherTutorialsComponent },
+  {path: 'teachers/tutorials/group', component: GroupSessionComponent },
   {path: 'teachers/courses', component: TeacherCoursesComponent },
   {path: 'teachers/courses/create', component: CourseCreateComponent },
 ]
