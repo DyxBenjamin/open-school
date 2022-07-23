@@ -1,5 +1,10 @@
 import {RouterModule, Routes} from "@angular/router";
 import {TeachersComponent} from "./teachers/teachers.component";
+import {LoginComponent} from "./acceso/login/login.component";
+import {SignupComponent} from "./acceso/signup/signup.component";
+import {SignupPadreComponent} from "./acceso/signup-padre/signup-padre.component";
+import {SignupProfesorComponent} from "./acceso/signup-profesor/signup-profesor.component";
+import {SignupTutorComponent} from "./acceso/signup-tutor/signup-tutor.component";
 import {NgModule} from "@angular/core";
 import {TeacherGroupsComponent} from "./teachers/teacher-groups/teacher-groups.component";
 import {TeacherParentsComponent} from "./teachers/teacher-parents/teacher-parents.component";
@@ -25,6 +30,11 @@ const routes: Routes = [
   {path: 'students', component: StudentsComponent},
   {path: 'students/courses', component: StudentsCoursesComponent},
   {path: 'students/course/:course', component: StudentsCoursesCourseComponent},
+  {path: 'login', component: LoginComponent },
+  {path: 'signUp', component: SignupComponent },
+  {path: 'signupPadre', component:SignupPadreComponent},
+  {path: 'signupProfesor', component:SignupProfesorComponent},
+  {path: 'signupTutor', component:SignupTutorComponent}
 ]
 
 @NgModule({

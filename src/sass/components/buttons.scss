@@ -1,34 +1,34 @@
-@mixin common-props{
+@mixin common-props {
   height: 50px;
   border-radius: 15px;
   border: none;
   color: white;
-  box-shadow:0 5px 0 #5479c8;
+  box-shadow: 0 5px 0 #5479c8;
   font-size: 18px;
   background: #468aed;
   font-weight: 500;
 
-  &:hover{
+  &:hover {
     background: #6499E5;
-    box-shadow:0 5px 0 #5479c8;
-    }
+    box-shadow: 0 5px 0 #5479c8;
+  }
 
-  &:active{
+  &:active {
     background: #5479c8;
     transform: translate(0, 5px);
     box-shadow: none;
-    }
   }
+}
 
-.small-icon-button{
+.small-icon-button {
   display: grid;
   place-content: center;
   width: 50px;
   @include common-props;
 
-  }
+}
 
-.wide-button{
+.wide-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -36,9 +36,9 @@
   gap: 10px;
   width: 150px;
   @include common-props;
-  }
+}
 
-.dynamic-wide-button{
+.dynamic-wide-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -46,9 +46,9 @@
   gap: 10px;
   padding: 0 15px;
   @include common-props;
-  }
+}
 
-.dynamic-wide-button-small{
+.dynamic-wide-button-small {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -57,4 +57,4 @@
   padding: 0 15px;
   @include common-props;
   height: 30px;
-  }
+}
