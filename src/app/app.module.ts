@@ -9,6 +9,11 @@ import {HomeComponent} from "./pages/portal/home/home.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {NavBarComponent} from "./components/nav-bar/nav-bar.component";
+import {AppRoutingModule} from "./app-routing.module";
+import {MatIconModule} from "@angular/material/icon";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GroupsComponent } from './teachers/groups/groups.component';
+import { ParentsComponent } from './teachers/parents/parents.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +21,9 @@ import {NavBarComponent} from "./components/nav-bar/nav-bar.component";
     TeachersComponent,
     HomeComponent,
     NavBarComponent
+    TeachersComponent,
+    GroupsComponent,
+    ParentsComponent
   ],
   exports: [MatSidenavModule],
     imports: [
@@ -24,6 +32,13 @@ import {NavBarComponent} from "./components/nav-bar/nav-bar.component";
         RouterModule,
         BrowserAnimationsModule,
     ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule,
+    MatIconModule,
+    BrowserAnimationsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
