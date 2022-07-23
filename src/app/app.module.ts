@@ -14,6 +14,16 @@ import { TeacherTutorialsComponent } from './teachers/teacher-tutorials/teacher-
 import { TeacherCoursesComponent } from './teachers/teachers-courses/teacher-courses.component';
 import { CourseCreateComponent } from './teachers/teachers-courses/course-create/course-create.component';
 import { GroupSessionComponent } from './teachers/teacher-tutorials/group-session/group-session.component';
+import { LoginComponent } from './acceso/login/login.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { SignupComponent } from './acceso/signup/signup.component';
+import { SignupPadreComponent } from './acceso/signup-padre/signup-padre.component';
+import { SignupProfesorComponent } from './acceso/signup-profesor/signup-profesor.component';
+import { SignupTutorComponent } from './acceso/signup-tutor/signup-tutor.component';
+import { PerfilAlumnoComponent } from './acceso/perfil-alumno/perfil-alumno.component';
+import { PerfilPadreComponent } from './acceso/perfil-padre/perfil-padre.component';
+import { PerfilProfesorComponent } from './acceso/perfil-profesor/perfil-profesor.component';
+import { PerfilTutorComponent } from './acceso/perfil-tutor/perfil-tutor.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +35,24 @@ import { GroupSessionComponent } from './teachers/teacher-tutorials/group-sessio
     TeacherTutorialsComponent,
     TeacherCoursesComponent,
     CourseCreateComponent,
-    GroupSessionComponent
+    GroupSessionComponent,
+    LoginComponent,
+    SignupComponent,
+    SignupPadreComponent,
+    SignupProfesorComponent,
+    SignupTutorComponent,
+    PerfilAlumnoComponent,
+    PerfilPadreComponent,
+    PerfilProfesorComponent,
+    PerfilTutorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
