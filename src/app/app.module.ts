@@ -9,13 +9,23 @@ import {MatIconModule} from "@angular/material/icon";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GroupsComponent } from './teachers/groups/groups.component';
 import { ParentsComponent } from './teachers/parents/parents.component';
+import { StudentsComponent } from './teachers/students/students.component';
+import { TutorialsComponent } from './teachers/tutorials/tutorials.component';
+import { CoursesComponent } from './teachers/courses/courses.component';
+import { CourseCreateComponent } from './teachers/courses/course-create/course-create.component';
+import { GroupSessionComponent } from './teachers/tutorials/group-session/group-session.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TeachersComponent,
     GroupsComponent,
-    ParentsComponent
+    ParentsComponent,
+    StudentsComponent,
+    TutorialsComponent,
+    CoursesComponent,
+    CourseCreateComponent,
+    GroupSessionComponent
   ],
   imports: [
     BrowserModule,
