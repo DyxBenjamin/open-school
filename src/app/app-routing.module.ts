@@ -9,7 +9,7 @@ import {TeacherCoursesComponent} from "./teachers/teachers-courses/teacher-cours
 import {CourseCreateComponent} from "./teachers/teachers-courses/course-create/course-create.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: 'teachers', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'teachers', component: TeachersComponent },
   {path: 'teachers/groups', component: TeacherGroupsComponent },
   {path: 'teachers/parents', component: TeacherParentsComponent },

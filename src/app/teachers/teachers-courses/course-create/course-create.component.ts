@@ -12,4 +12,9 @@ export class CourseCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(event:any) {
+    event.preventDefault();
+    console.log('%c << 📌 event >>', 'color: white; font-size: 12px');
+    console.log(event);
+  }
 }
