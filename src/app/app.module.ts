@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { TeachersComponent } from './teachers/teachers.component';
 import {RouterModule} from "@angular/router";
@@ -44,8 +43,7 @@ import { PerfilTutorComponent } from './acceso/perfil-tutor/perfil-tutor.compone
     NavBarComponent,
     NewUserComponent,
     HomeComponent,
-    RegisteredUserComponent
-    GroupSessionComponent,
+    RegisteredUserComponent,
     LoginComponent,
     SignupComponent,
     SignupPadreComponent,
