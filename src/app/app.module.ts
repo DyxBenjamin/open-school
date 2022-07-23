@@ -14,8 +14,6 @@ import { TeacherTutorialsComponent } from './teachers/teacher-tutorials/teacher-
 import { TeacherCoursesComponent } from './teachers/teachers-courses/teacher-courses.component';
 import { CourseCreateComponent } from './teachers/teachers-courses/course-create/course-create.component';
 import { GroupSessionComponent } from './teachers/teacher-tutorials/group-session/group-session.component';
-import { GroupsComponent } from './teachers/groups/groups.component';
-import { ParentsComponent } from './teachers/parents/parents.component';
 import { LoginComponent } from './acceso/login/login.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { SignupComponent } from './acceso/signup/signup.component';
@@ -37,9 +35,7 @@ import { PerfilTutorComponent } from './acceso/perfil-tutor/perfil-tutor.compone
     TeacherTutorialsComponent,
     TeacherCoursesComponent,
     CourseCreateComponent,
-    GroupSessionComponent
-    GroupsComponent,
-    ParentsComponent,
+    GroupSessionComponent,
     LoginComponent,
     SignupComponent,
     SignupPadreComponent,
