@@ -1,0 +1,46 @@
+<div class="bodyContainer">
+  <aside class="tasksContainer">
+    <div class='medium-card' style="cursor: auto">
+      <div class='course-card-header' [ngStyle]="{'--color-1':color1, '--color-2':color2}">
+        <p class='massive-label' style='color: white'>Matemáticas</p>
+      </div>
+      <div class='course-card-body' style="cursor: auto">
+        <p class='big-label'>Temario</p>
+        <p class='medium-label'>Primaria 2do grado</p>
+      </div>
+    </div>
+    <div class="taskStyle" *ngFor='let materia of materias'
+         [ngStyle]="{'--color-1':color1, '--color-2':color2}">
+      <p class="medium-label">{{materia.nombre}}</p>
+    </div>
+  </aside>
+
+  <section class="taskContent">
+    <app-course-header></app-course-header>
+    <div>
+      <table class="table table-hover">
+        <thead>
+        <tr align="center">
+          <th>Número 1</th>
+          <th></th>
+          <th>Número 2</th>
+          <th>Resultado</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let item of [].constructor(10); let i = index">
+        <tr align="center">
+          <td>{{getRandomNum()}}</td>
+          <td>+</td>
+          <td>{{getRandomNum()}}</td>
+          <td><input type="number" min="0" class="form-control"></td>
+        </tr>
+        </tbody>
+      </table>
+      <div>
+        <button class='dynamic-wide-button'>
+          Enviar
+        </button>
+      </div>
+    </div>
+  </section>
+</div>

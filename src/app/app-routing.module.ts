@@ -14,6 +14,9 @@ import {TeacherCoursesComponent} from "./teachers/teachers-courses/teacher-cours
 import {CourseCreateComponent} from "./teachers/teachers-courses/course-create/course-create.component";
 import {HomeComponent} from "./pages/portal/home/home.component";
 import {RegisteredUserComponent} from "./pages/registered-user/registered-user.component";
+import {StudentsComponent} from "./students/students.component";
+import {StudentsCoursesComponent} from "./students/courses/courses.component"
+import {StudentsCoursesCourseComponent} from "./students/courses/course/course.component"
 import {GroupSessionComponent} from "./teachers/teacher-tutorials/group-session/group-session.component";
 
 const routes: Routes = [
@@ -27,6 +30,9 @@ const routes: Routes = [
   {path: 'teachers/tutorials/group', component: GroupSessionComponent },
   {path: 'teachers/courses', component: TeacherCoursesComponent },
   {path: 'teachers/courses/create', component: CourseCreateComponent },
+  {path: 'students', component: StudentsComponent},
+  {path: 'students/courses', component: StudentsCoursesComponent},
+  {path: 'students/course/:course', component: StudentsCoursesCourseComponent},
   {path: 'home', component: HomeComponent},
   {path: 'registered-user', component: RegisteredUserComponent},
   {path: 'login', component: LoginComponent },
