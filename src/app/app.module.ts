@@ -8,12 +8,14 @@ import {AppRoutingModule} from "./app-routing.module";
 import {MatIconModule} from "@angular/material/icon";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GroupsComponent } from './teachers/groups/groups.component';
+import { ParentsComponent } from './teachers/parents/parents.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TeachersComponent,
-    GroupsComponent
+    GroupsComponent,
+    ParentsComponent
   ],
   imports: [
     BrowserModule,
