@@ -14,6 +14,11 @@ import { TeacherTutorialsComponent } from './teachers/teacher-tutorials/teacher-
 import { TeacherCoursesComponent } from './teachers/teachers-courses/teacher-courses.component';
 import { CourseCreateComponent } from './teachers/teachers-courses/course-create/course-create.component';
 import { GroupSessionComponent } from './teachers/teacher-tutorials/group-session/group-session.component';
+import { StudentsComponent } from "./students/students.component";
+import { StudentsCoursesComponent } from "./students/courses/courses.component";
+import { StudentsCoursesCourseComponent } from "./students/courses/course/course.component";
+import { StudentsCourseHeaderComponent } from './students/courses/course/course-header/course-header.component';
+import { CourseContentComponent } from './students/courses/course/course-content/course-content.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,13 @@ import { GroupSessionComponent } from './teachers/teacher-tutorials/group-sessio
     TeacherTutorialsComponent,
     TeacherCoursesComponent,
     CourseCreateComponent,
-    GroupSessionComponent
+    GroupSessionComponent,
+    StudentsComponent,
+    StudentsCoursesComponent,
+    StudentsCoursesCourseComponent,
+    StudentsCourseHeaderComponent,
+    CourseContentComponent,
+
   ],
   imports: [
     BrowserModule,

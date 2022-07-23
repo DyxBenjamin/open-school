@@ -7,6 +7,9 @@ import {TeacherStudentsComponent} from "./teachers/teacher-students/teacher-stud
 import {TeacherTutorialsComponent} from "./teachers/teacher-tutorials/teacher-tutorials.component";
 import {TeacherCoursesComponent} from "./teachers/teachers-courses/teacher-courses.component";
 import {CourseCreateComponent} from "./teachers/teachers-courses/course-create/course-create.component";
+import {StudentsComponent} from "./students/students.component";
+import {StudentsCoursesComponent} from "./students/courses/courses.component"
+import {StudentsCoursesCourseComponent} from "./students/courses/course/course.component"
 import {GroupSessionComponent} from "./teachers/teacher-tutorials/group-session/group-session.component";
 
 const routes: Routes = [
@@ -19,6 +22,9 @@ const routes: Routes = [
   {path: 'teachers/tutorials/group', component: GroupSessionComponent },
   {path: 'teachers/courses', component: TeacherCoursesComponent },
   {path: 'teachers/courses/create', component: CourseCreateComponent },
+  {path: 'students', component: StudentsComponent},
+  {path: 'students/courses', component: StudentsCoursesComponent},
+  {path: 'students/course/:course', component: StudentsCoursesCourseComponent},
 ]
 
 @NgModule({

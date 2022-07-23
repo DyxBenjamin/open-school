@@ -1,0 +1,49 @@
+@import '../../../../sass/components/labels.scss';
+@import '../../../../sass/components/cards.scss';
+@import '../../../../sass/components/buttons.scss';
+@import '../../../../sass/components/links.scss';
+@import '../../../../sass/components/images.scss';
+
+
+.bodyContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tasksContainer {
+  width: 30%;
+  max-width: 400px;
+  margin: 10px;
+  float: left;
+}
+
+.taskContent{
+  width: 65%;
+  max-width: 800px;
+  margin: 5em 20px 0 ;
+
+  float: left;
+}
+
+.taskStyle{
+  box-sizing: border-box;
+  height: 50%;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 8px #C9C9C9;
+  cursor: pointer;
+}
+
+.taskStyle:hover{
+  $bg-color-1: var(--color-1);
+  $bg-color-2: var(--color-2);
+  background: linear-gradient(to right, $bg-color-1, $bg-color-2);
+  color: #fff;
+}
+
+
