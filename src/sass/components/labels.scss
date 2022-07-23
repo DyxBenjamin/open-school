@@ -1,21 +1,52 @@
+@mixin label-light {
+  color: gray;
+  font-weight: 400;
+  margin: 0;
+  }
+
+@mixin label {
+  font-weight: bold;
+  margin: 0;
+  }
+
+.small-label-light {
+  font-size: 12px;
+  @include label-light;
+  }
+
+.medium-label-light {
+  font-size: 18px;
+  @include label-light;
+  }
+
+.big-label-light {
+  font-size: 24px;
+  @include label-light;
+  }
+
+.massive-label-light {
+  font-size: 32px;
+  @include label-light;
+  }
+
 .small-label{
   font-size: 12px;
-  font-weight: bold;
+  @include label;
 }
 
 .medium-label{
   font-size: 18px;
-  font-weight: bold;
+  @include label;
 }
 
 .big-label{
   font-size: 24px;
-  font-weight: bold;
+  @include label;
 }
 
 .massive-label{
   font-size: 36px;
-  font-weight: bold;
+  @include label;
 }
 
 .gradient-label{
